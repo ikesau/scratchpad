@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js $*",
+    "format": "prettier --write 'sketches/*/*.js'"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +15,8 @@
     "nodemon": "^1.18.4",
     "p5": "^0.7.2",
     "reload": "^2.3.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.14.3"
   }
 }
