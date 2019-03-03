@@ -25,7 +25,7 @@ function drawNotes(notes, y) {
   let position = 0;
   notes.forEach((note, index) => {
     fill(note * 100);
-    let previousNote = (notes[index - 1] || 0) * (windowWidth / notes.length);
+    let previousNote = ((notes[index - 1] || 0) * windowWidth) / 8;
     let x = position + previousNote;
     position += previousNote;
     ellipse(x, y, 50);
